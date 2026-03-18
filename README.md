@@ -1,4 +1,3 @@
-# SW15S
-Calculator Suite for the DM-15 (FORTH like)
+# SW15S - The Swiss Army Knife Calculator In Your Pocket
 
 # ++++ COMING SOON ++++
