@@ -2,6 +2,9 @@
 
 # ++++ COMING SOON ++++
 
+<img width="884" height="537" alt="Image" src="https://github.com/user-attachments/assets/d33ba76f-114b-4f04-be9b-960ea7c9fd96" />
+
+
 ```
 This software is protected by the BSD 3 Clause Licence
 and copyright (c) 2026 by deetee. All rights reserved.
