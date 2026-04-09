@@ -481,6 +481,232 @@ Keys:
   Other    Edit recent line with LINE EDITOR
 
 
+____________________
+
+DATE - Calendar
+____________________
+
+DATE offers a weekly calendar.
+
+Keys:
+  g   Quit
+  0   Toggle the begin of the week (Sun or Mon)
+  5   Switch to "today's month"
+  7 1 First/last month of the year
+  4 6 Previous/next week (displayed inverse)
+  8 2 Previous/next month
+  9 3 Previous/next year
+
+
+____________________
+
+TIME - World Clock
+____________________
+
+TIME offers a world time clock. The first clock shows the home time zone, while
+the other two clocks show selectable time zones. Please note that the time
+displayed is a snapshot and will not refresh automatically.
+
+Keys:
+  g                  Quit
+  SQRT SST           Select home time zone
+  EXP GTO POW10 SIN  Select two time zones
+  R/S GSB ROT        Reset time zones
+
+
+____________________
+
+MARK - Scores
+____________________
+
+MARK let you display and store 2 or 4 scores (AD or ABCD).
+
+Keys:
+  g             Quit
+  ENTER         Toggle 2 or 4 scores
+  SQRT SST R/S  In/decrement or clear score A
+  EXP GTO GSB   In/decrement or clear score B
+  9 6 3         In/decrement or clear score C
+  / * -         In/decrement or clear score D
+  BSP           Clear all scores
+
+
+____________________
+
+E6B - Flight Planner
+____________________
+
+The E6B flight computer is a legendary circular slide rule used in aviation.
+This app has all capabilities of E6B for flight planning and makes intense use
+of RACK (see above) for all calculations.
+
+Select one of 9 categories (with 8, 2 and 5/ENTER):
+  TAS     True Air Speed as function of IAS (Indicated Air Speed) and OAT (Outside Air Temperature)
+  WCA-GS  Wind Correction Angle (deg) as function of WS (Wind Speed), WA (Wind Angle, deg) and TAS
+          and GS (Ground Speed) as function of TAS, WCA, WS and WA
+  ETA     EET (Estimated Elapsed Time, min) as function of Distance (NM) and GS (kts)
+          and ETA (Estimated Time of Arrival, h.mm) as function of AT (Actual Time, h.mm) and EET
+  ALT     PA (Pressure Alt) as function of EIA (Estimated Indicated Alt) and QNH (Question Nautical Height)
+          and DA (Density Alt) as function of OAT and PA
+          and TA as function of EIA, OAT and PA
+  DESCENT TOD (Top Of Descent, NM) as function of Hight1 (ft), Height2 ft) and ANG (Descent Angle, deg)
+          and ROD (Rate Of Descent, fpm) as function of GS (kt) and ANG (deg)
+  FUEL    GPH (Gallons Per Hour) as function of FUEL-BURNED (gal) and TIME (h)
+          and ENDURANCE (h) as function of FUEL (gal) and GPH
+          and FR (Fuel Range, NM) as function of ENDURANCE (h) and GS (kts)
+  OCC     (Off Course Correction) ... TC (Total Correction, deg) as function of DistanceOFF (NM),
+          DistanceFLOWN (NM) and DistanceREMAIN (NM)
+  UNIT    cm>in, in>cm, m>ft, ft>m, mps>fpm, fpm>mps, km>sm, sm>km, km>nm, nm>km, nm>sm, sm>nm
+  MISC    l>gal, gal>l, C>F, F>C, kg>lbs, lbs>kg
+  g       Quit
+
+
+____________________
+
+SUGR
+____________________
+
+SUGR is an insulin calculator that calculates the instantly needed insulin units
+(and fat caused units needed in 3 hours) dependig of the food consumed, the
+actual blood sugar, the blood sugar target, the Insulin-Sensitivity-Factor
+(mg/dL lowered by 1 Unit of insulin) and the last injected insulin units
+(including the time elapsed since then).
+
+Keys of food selection:
+  g        Quit
+  ENTER 5  Add selected food
+  8 2 7 1  Previous/next food, Home and End
+  9 3      Previous/next food category
+
+Keys of insulin calculator:
+  g             Quit
+  ENTER 5       Goto food selection
+  0             Clear collected food
+  SQRT SST R/S  In/decrease and reset actual blood glucose (mg/dL)
+  EXP GTO GSB   In/decrease and reset target blood glucose (mg/dL)
+  POW10 SIN ROT In/decrease and reset Insulin-Sensitivity-Factor (mg/dL)
+  POW COS SWAP  In/decrease and reset last dose (units)
+  INV TAN BSP   In/decrease and reset elapsed time since last dose (h)
+
+If you are used to use values for blood glucose in mmol/L all you have to do is
+to multiply your data for actual/target blood glucose and ISF with 18.0156
+(atomar weight of glucose molecule).
+
+
+____________________
+
+ASC - ASCII Table
+____________________
+
+ASC provides a line by line table of ASCII characters.
+
+Keys:
+  g  Quit
+  8 2 De/increase line in ASCII table
+
+
+____________________
+
+PT - Periodic Table
+____________________
+
+PT shows data of all elements of the Periodic Table of Elements. The first line
+displays atomic number, symbol, period, group, number of valenz electrons and
+atomic mass. The second line displays the melting temperature (in K), the
+boiling temperature (in K), the electronegativity (Pauling scale) and the
+density (kg/m^3).
+Please note that groups 1,2,13-18 are main groups and 3-12 are subgroups
+(transition metals).
+
+Keys:
+  g  Quit
+  8 2 9 3 7 1 De/increase Page down/up Pos1/End atomic number of elements
+  - + / *     De/increase Pos1/End elements in alphabetical order (89 Ar ... 40 Zr)
+  SUM         Alpabetically middle element (12 Mg)
+
+
+____________________
+
+D&I - diff&int
+____________________
+
+D&I shows rules and formulae for derivatives and integrals.
+
+Keys:
+  g            Quit
+  8 2 9 3 7 1  De/increase Page down/up Pos1/End formula number
+  4 6          Left/right ... switch between derivative (4) and integral (6) view
+  5            View (long) formula with LINE EDITOR
+
+
+____________________
+
+RULE - Slide Rule
+____________________
+
+RULE is a simulation of a historic slide rule for reasons of education and
+reminiscence.
+
+Keys:
+  g       Quit
+  SQRT /  Slide one pixel left/right
+  EXP 9   Slide 5 pixel left/right
+  POW10 8 Slide 10 pixel left/right
+  POW 7   Slide 20 pixel left/right
+
+____________________
+
+FIT - 2048 game
+____________________
+
+FIT offers an addictive 2048 game. Due to the restricted display the original
+4x4-screen is split to 2x2x4 (see below) which adds an additional challenge.
+FIT uses an own font according to domino tiles (0-9), followed by 1/2/3/4 big
+points (10-13) and a small/large grey area (14 and 15).
+
+Display split (original 4x4 to 2x2x4):
+ aeim  >
+ bfjn  >  efgh lkji
+ cgko  >  abcd ponm
+ dhlp  >
+
+Keys:
+  g   Quit
+  f   New game
+  4 1 Shift left
+  6 3 Shift right
+  8 5 Shift up
+  2   Shift down
+
+
+____________________
+
+SPECIFICATIONS
+____________________
+
+  LINE EDITOR: 128   Maximal string length
+  CALC:        16    Stack size
+               16    Address stack size
+               0.001 Solver step accuracy (delta-x)
+               20    Maximal solver itarations
+               10    Integral steps/stripes
+               2048  Size of memory (holds core, builtin and user programs)
+               54    Core programs
+               123   Builtin programs
+               30    User programs
+               4     Lenght of program names
+               8     Displayed digits of float number
+               19    Displayed digits of integer number
+               10    Float numbers to store
+               32x16 Plot dimensions
+  RACK:        4x8   Spreadsheet dimensions (4 cols, 8 rows)
+               2x2   Displayed cells (alternatively 1x1)
+  TTOP:        4     Stack size
+               0-3   Decimals
+  CPU:         64    Memory size
+  NOTE:        255   Size of text file
+
+
 
 
 ```
