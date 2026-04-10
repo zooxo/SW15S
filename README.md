@@ -8,7 +8,7 @@
 
 
 ```
-This software is protected by the BSD 3 Clause Licence
+This software is protected by the BSD 3 Clause License
 and copyright (c) 2026 by deetee. All rights reserved.
 
 
@@ -67,7 +67,7 @@ Possible applications are:
   CMD  ... Symbolic calculator with editable command line
   RACK ... Small (8x4) but powerful spreadsheet
   TTOP ... Tabletop calculator for large numbers (up to 3 fixed decimal places)
-  CPU  ... Simulates a simple 8-bit-CPU with 64 byte memory
+  CPU  ... Simulates a simple 8-bit-CPU with 64 bytes memory
   NOTE ... Simple text editor for notes
   DATE ... Calendar
   TIME ... World time clock
@@ -76,7 +76,7 @@ Possible applications are:
   SUGR ... Insulin calculator
   ASC  ... ASCII table
   PT   ... Periodic Table of the Elements
-  D&I  ... Rules and formulae for derivatives and integrals
+  D&I  ... Rules and formulas for derivatives and integrals
   RULE ... Slide Rule Simulator
   FIT  ... Addictive 2048 game
 
@@ -89,24 +89,24 @@ ____________________
 STATUS - ANNUNCIATOR
 ____________________
 
-Depending o the running application, the display shows specific data on the
-right side. For example the annunciator always displays the battery level icon.
+Depending on the running application, the display shows specific data on the
+right side. For example, the annunciator always displays the battery level icon.
 Please note that the battery level is a momentarily value that varies due to the
 momentarily activity of the calculator. But if you see the empty battery symbol
 quite often you might consider changing the battery.
 
-In addition the first status line shows pressed function keys (f, g), hyperbolic
+In addition, the first status line shows pressed function keys (f, g), hyperbolic
 function keys (h, H), the keyboard mode (numeric, keypad, qwert), the number of
 decimals (tabletop calculator), a running symbol (sand clock) and a reference
 link symbol (spreadsheet).
 
-The second status line annunciates the dicionary entry number, a user memory
+The second status line annunciates the dictionary entry number, a user memory
 usage number, a text editor usage number, the hex mode (16-symbol), a following
-complex number operation (C) or the cell address (ie A1).
+complex number operation (C) or the cell address (i.e. A1).
 
-Both applications the spreadsheet (RACK) and the periodic table of elements (PT)
+Both applications, the spreadsheet (RACK) and the periodic table of elements (PT)
 show a graphic 'cursor' location black bar, where one white pixel represents the
-location of the cell (respecively the element) on the spreadsheet (respectively
+location of the cell (respectively the element) on the spreadsheet (respectively
 on the periodic table) - good vision needed.
 
 
@@ -139,16 +139,16 @@ programs for selection.
 
 Keys:
   g       Quit
-  8|4|2|6 Previous|Next
-  7|1     Home|End
-  9|3     PgUp|PgDown
-  5|ENTER Select
+  8 4 2 6 Previous/next entry
+  7 1     Home/end
+  9 3     PgUp/PgDown
+  5 ENTER Select
   SQRT    Jump to physical constants
   EXP-TAN Fast decade access: Jump in 10% steps
 
 On the screen the "big sized" command is the selected, while on its left/right
-side the prvious/next command is shown in small font. On the right side of the
-screen the command number is displayed.
+side the previous/next command is shown with small font. On the right side of
+the screen the command number is displayed.
 
 
 ____________________
@@ -157,29 +157,29 @@ LINE EDITOR
 ____________________
 
 Many applications (CMD, MED, RACK, NOTE, D&I) use this line editor to edit a
-string. With a double click of the f key (f-f) the user can select one of 3
+string. With a double click of the f key (ff) the user can select one of 3
 different keyboard input possibilities:
 
 General keys:
-  f|g   Regular shift functions
-  f-f   Next keyboard mode (NUMPAD, CURPAD, KEYBOARD)
-  f-g   Open DICT
-  g-g   Quit
-  f-STO Store text to clipboard
-  f-RCL Recall clipboard and overwrite edit string
+  fg    Regular shift functions
+  ff    Next keyboard mode (NUMPAD, CURPAD, KEYBOARD)
+  fg    Open DICT
+  gg    Quit
+  fSTO  Store text to clipboard
+  fRCL  Recall clipboard and overwrite edit string
 
-- NUMPAD: This is the kind of keyboard the HP15 uses. For instance pressing the
+- NUMPAD: This is the kind of keyboard the HP15 uses. For instance, pressing the
   number 8 insert the character 8 to the edited string and pressing the EXP-key
   inserts the characters E, X and P to the edited string. Function keys can be
   selected with the f or g key.
-    g-g      Quit
-    SST|GTO  Cursor right/left
-    R/S|GSB  5 x Cursor left/right
+    gg       Quit
+    SST GTO  Cursor right/left
+    R/S GSB  5 x Cursor left/right
     BSP      Backspace
-    g-BSP    Clear edit string
+    gBSP     Clear edit string
     ENTER    Insert space
 
-- CURSOR PAD: The number keys act like a cursor pad. For instance 8 selects UP,
+- CURSOR PAD: The number keys act like a cursor pad. For instance, 8 selects UP,
   7 selects HOME and 5 (usually) selects. Hence the cursor points to a matrix of
   characters shown on the screen. This is the way to enter special characters
   like '%'.
@@ -187,21 +187,21 @@ General keys:
     4 Left  5 Enter  6 Right
     1 End   2 Down   3 PgDown
 
-    g-g|ENTER Quit
-    SST|GTO   Cursor right/left
-    R/S|GSB   5 x Cursor left/right
+    gg        Quit
+    SST GTO   Cursor right/left
+    R/S GSB   5 x Cursor left/right
     BSP       Backspace
     g-BSP     Clear edit string
 
-- QWERT KEYBOARD: Unbelievable but the keyboard of the HP15 is able to provide a
+- QWERT KEYBOARD: Unbelievable but the keyboard of the HP15 can provide a
   typewriter keyboard (for those who use to write blindly). The 0 key simulates
   the space key, the multiply key the backspace, the subtract key latches the
   shift key and the dot, 3, SUM+ and + keys provide cursor keys.
-    g-g         Quit
-    f-g         Dictionary
+    gg          Quit
+    fg          Dictionary
     -           Toggle caps lock
-    *|g-*|g-BSP Backspace | Clear edit string
-    .|SUM|3|+   Cursor keys (left|up|down|right) - up|down = 5 x left|right
+    * g* gBSP   Backspace, Clear edit string
+    . SUM 3 +   Cursor keys (left/up/down/right) - up/down = 5 x left/right
 
 On the right side of the screen there is a symbol, which shows the selected
 input method (1 for NUMPAD, a 4-cursor-symbol for the CURSOR PAD and a keyboard
@@ -213,13 +213,14 @@ ____________________
 MED - Memory Editor
 ____________________
 
-MED edits and manages the central memory, where intrinsic, builtin and user
+MED edits and manages the central memory, where intrinsic, built-in and user
 programs are stored.
 The second line of the display shows the name of the selected program/command,
 its number and the total number of programs. The first line of the display shows
 the commands used in this program.
 The number in the lower right corner shows how much of the available program
-memory is occupied (ie 7 means, that more than 70% is used).
+memory is occupied (i.e. 7 means that more than 70% is used).
+Please note that empty programs/strings are replaced by "NOP" automatically.
 
 For navigation MED uses the CURSOR PAD:
   7 Home  8 Previous  9 PgUp
@@ -228,17 +229,17 @@ For navigation MED uses the CURSOR PAD:
 
 Other keys:
   g       Quit
-  /|5     Edit program (with LINE EDITOR)
+  / 5     Edit program (with LINE EDITOR)
   *       Edit program name (with LINE EDITOR)
   +       Insert new (user) program (named NEW with NOP command)
   -       Delete (user) program - (intrinsic programs cannot be deleted!)
-  STO|RCL Copy|Paste program to selected program (overwites!)
+  STO RCL Copy|Paste program to selected program (overwrites!)
   SQRT    Jump to physical constants
   EXP-TAN Fast decade access: Jump in 10% steps
 
 There are "special sections" (reserved names) in the program memory:
   FNA-FNE Used for five math functions to examine/calculus/plot in CALC
-  A1-D4   Cell names/programes used in RACK
+  A1-D4   Cell names/programs used in RACK
   cXY     Physical constants (see below)
 
 Conditions and loops in programs:
@@ -305,7 +306,7 @@ as on the HP-15c/DM15 - except that programming is done "the FORTH way" via MED.
 
 Special keys:
  g-g   Quit
- f-g   Execute command via dictionary (ie physical constant (start with 'c')
+ f-g   Execute command via dictionary (i.e. physical constant (start with 'c')
  f-TAN Demand next operation as complex number operation
 
 CALC supports the following functions:
@@ -321,7 +322,7 @@ CALC supports the following functions:
     SWAP      Swap X and Y
     LASTx     Push last ENTERed number to stack
     STO RCL   Store Y to register number X (0-9) or push register X to stack
-    fSIN      Toggle HEX mode (enter numbers >9 with a dot (ie .1=a, .6=f))
+    fSIN      Toggle HEX mode (enter numbers >9 with a dot (i.e. .1=a, .6=f))
     g* g/     Conditions - provides 1 (TRUE) if X=0 respective X<=Y (else 0)
     fENTER    Generate random (16-bit) number
   Advanced mathematics
@@ -330,7 +331,7 @@ CALC supports the following functions:
     SIN, COS, TAN, aSIN, aCOS, aTAN, SINH, COSH, TANH, aSINH, aCOSH, aTANH
     gSWAP     OVER (YX->YXY)
     g-        NAND ~(X & Y) ... useful in HEX mode (fSIN)
-    fCOS      DO loop - repeat last (with dict) selected command X times
+    fCOS      DO loop - repeat last (with DICT) selected command X times
     fSWAP     PV (present value) of interest rate (%) and duration (periods)
     fBSP      Calculate 2 roots of quadratic equation xx+px+q=0 (enter p q)
   Complex number operations: (Y=imaginary and X=real part)
@@ -368,9 +369,9 @@ RACK - Spreadsheet
 ____________________
 
 RACK offers a small (4x8 cells) spreadsheet application where every cell refers
-to the user programs named A1 to D8 (ie editable with MED). In addition to the
-program every cell can hold a (7 character) text which is displayed (even if a
-cell hosts a program).
+to the user programs named A1 to D8 (i.e. editable with MED). In addition to
+the program every cell can hold a (7 character) text which is displayed (even
+if a cell hosts a program).
 
 Keys:
   g         Quit
@@ -381,7 +382,7 @@ Keys:
   GSB ROT   Copy and paste the cell program (overwrites existing program!)
   BSP       Delete complete sheet (!)
   R/S       Run CALC (side calculation) (copy result to LINE EDITOR clipboard)
-            Useful for inserting physical constants to RACK programs
+            Useful for inserting physical constants into RACK programs
 
 When demanding a cell reference (while editing a user program) press RCL to go
 back to the RACK navigation mode, navigate to the demanded cell and press /, 5
@@ -395,7 +396,7 @@ ____________________
 
 TTOP is a tabletop calculator that enables (simple) calculations with big
 numbers (even in HEX format) with up to 3 decimals (set with f-key). TTOP uses a
-"dynamic fixed point arithmetic" which raises the numerical precision with the
+"Dynamic Fixed Point Arithmetic" which raises the numerical precision with the
 number of decimals.
 
 TTOP supports the following functions:
@@ -420,8 +421,8 @@ ____________________
 CPU - CPU-Simulator
 ____________________
 
-CPU simulates a simple 8-bit-CPU with a 64 byte memory and two registers
-(accumulator A and register R). It can display an one byte output (in decimal,
+CPU simulates a simple 8-bit-CPU with a 64 bytes memory and two registers
+(accumulator A and register R). It can display a one byte output (in decimal,
 hex and as character (if appropriate)).
 
 Display:
@@ -466,7 +467,7 @@ NOTE - Text Editor
 ____________________
 
 NOTE is a (very) simple text editor that uses the LINE EDITOR. It can manage up
-to 6 short (up to 128 characters) text files (ie formulae or todo lists).
+to 6 short (up to 128 characters) text files (i.e. formulas or todo lists).
 
 Keys:
   g        Quit
@@ -490,7 +491,7 @@ DATE offers a weekly calendar.
 
 Keys:
   g   Quit
-  0   Toggle the begin of the week (Sun or Mon)
+  0   Toggle the beginning of the week (Sun or Mon)
   5   Switch to "today's month"
   7 1 First/last month of the year
   4 6 Previous/next week (displayed inverse)
@@ -519,7 +520,7 @@ ____________________
 MARK - Scores
 ____________________
 
-MARK let you display and store 2 or 4 scores (AD or ABCD).
+MARK lets you display and store 2 or 4 scores (AD or ABCD).
 
 Keys:
   g             Quit
@@ -566,8 +567,8 @@ ____________________
 SUGR
 ____________________
 
-SUGR is an insulin calculator that calculates the instantly needed insulin units
-(and fat caused units needed in 3 hours) dependig of the food consumed, the
+SUGR is an insulin calculator that calculates the instantly needed insulin dose
+(and fat caused dose needed in 3 hours) depending of the food consumed, the
 actual blood sugar, the blood sugar target, the Insulin-Sensitivity-Factor
 (mg/dL lowered by 1 Unit of insulin) and the last injected insulin units
 (including the time elapsed since then).
@@ -588,9 +589,9 @@ Keys of insulin calculator:
   POW COS SWAP  In/decrease and reset last dose (units)
   INV TAN BSP   In/decrease and reset elapsed time since last dose (h)
 
-If you are used to use values for blood glucose in mmol/L all you have to do is
-to multiply your data for actual/target blood glucose and ISF with 18.0156
-(atomar weight of glucose molecule).
+If you are used to using values for blood glucose in mmol/L all you have to do
+is to multiply your data for actual/target blood glucose and ISF with 18.0156
+(atomic weight of glucose molecule).
 
 
 ____________________
@@ -598,7 +599,7 @@ ____________________
 ASC - ASCII Table
 ____________________
 
-ASC provides a line by line table of ASCII characters.
+ASC provides a line-by-line table of ASCII (and SW15S) characters.
 
 Keys:
   g  Quit
@@ -611,7 +612,7 @@ PT - Periodic Table
 ____________________
 
 PT shows data of all elements of the Periodic Table of Elements. The first line
-displays atomic number, symbol, period, group, number of valenz electrons and
+displays atomic number, symbol, period, group, number of valence electrons and
 atomic mass. The second line displays the melting temperature (in K), the
 boiling temperature (in K), the electronegativity (Pauling scale) and the
 density (kg/m^3).
@@ -622,15 +623,15 @@ Keys:
   g  Quit
   8 2 9 3 7 1 De/increase Page down/up Pos1/End atomic number of elements
   - + / *     De/increase Pos1/End elements in alphabetical order (89 Ar ... 40 Zr)
-  SUM         Alpabetically middle element (12 Mg)
+  SUM         Alphabetically middle element (12 Mg)
 
 
 ____________________
 
-D&I - diff&int
+D&I - DIFF&INT
 ____________________
 
-D&I shows rules and formulae for derivatives and integrals.
+D&I shows rules and formulas for derivatives and integrals.
 
 Keys:
   g            Quit
@@ -661,7 +662,7 @@ ____________________
 
 FIT offers an addictive 2048 game. Due to the restricted display the original
 4x4-screen is split to 2x2x4 (see below) which adds an additional challenge.
-FIT uses an own font according to domino tiles (0-9), followed by 1/2/3/4 big
+FIT uses its own font according to domino tiles (0-9), followed by 1/2/3/4 big
 points (10-13) and a small/large grey area (14 and 15).
 
 Display split (original 4x4 to 2x2x4):
@@ -688,13 +689,13 @@ ____________________
   CALC:        16    Stack size
                16    Address stack size
                0.001 Solver step accuracy (delta-x)
-               20    Maximal solver itarations
+               20    Maximal solver iterations
                10    Integral steps/stripes
-               2048  Size of memory (holds core, builtin and user programs)
+               2048  Size of memory (holds core, built-in and user programs)
                54    Core programs
                123   Builtin programs
                30    User programs
-               4     Lenght of program names
+               4     Length of program names
                8     Displayed digits of float number
                19    Displayed digits of integer number
                10    Float numbers to store
@@ -705,8 +706,6 @@ ____________________
                0-3   Decimals
   CPU:         64    Memory size
   NOTE:        255   Size of text file
-
-
 
 
 ```
