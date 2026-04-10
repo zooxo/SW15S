@@ -542,22 +542,30 @@ This app has all capabilities of E6B for flight planning and makes intense use
 of RACK (see above) for all calculations.
 
 Select one of 9 categories (with 8, 2 and 5/ENTER):
-  TAS     True Air Speed as function of IAS (Indicated Air Speed) and OAT (Outside Air Temperature)
-  WCA-GS  Wind Correction Angle (deg) as function of WS (Wind Speed), WA (Wind Angle, deg) and TAS
-          and GS (Ground Speed) as function of TAS, WCA, WS and WA
-  ETA     EET (Estimated Elapsed Time, min) as function of Distance (NM) and GS (kts)
-          and ETA (Estimated Time of Arrival, h.mm) as function of AT (Actual Time, h.mm) and EET
-  ALT     PA (Pressure Alt) as function of EIA (Estimated Indicated Alt) and QNH (Question Nautical Height)
-          and DA (Density Alt) as function of OAT and PA
-          and TA as function of EIA, OAT and PA
-  DESCENT TOD (Top Of Descent, NM) as function of Hight1 (ft), Height2 ft) and ANG (Descent Angle, deg)
-          and ROD (Rate Of Descent, fpm) as function of GS (kt) and ANG (deg)
+  TAS     True Air Speed as function of IAS (Indicated Air Speed) and OAT
+          (Outside Air Temperature)
+  WCA-GS  Wind Correction Angle (deg) as function of WS (Wind Speed), WA (Wind
+          Angle, deg) and TAS
+          GS (Ground Speed) as function of TAS, WCA, WS and WA
+  ETA     EET (Estimated Elapsed Time, min) as function of Distance (NM) and GS
+          (kts)
+          ETA (Estimated Time of Arrival, h.mm) as function of AT (Actual Time,
+          h.mm) and EET
+  ALT     PA (Pressure Alt) as function of EIA (Estimated Indicated Alt) and QNH
+          (Question Nautical Height)
+          DA (Density Alt) as function of OAT and PA
+          TA as function of EIA, OAT and PA
+  DESCENT TOD (Top Of Descent, NM) as function of Hight1 (ft), Height2 ft) and
+          ANG (Descent Angle, deg)
+          ROD (Rate Of Descent, fpm) as function of GS (kt) and ANG (deg)
   FUEL    GPH (Gallons Per Hour) as function of FUEL-BURNED (gal) and TIME (h)
           and ENDURANCE (h) as function of FUEL (gal) and GPH
-          and FR (Fuel Range, NM) as function of ENDURANCE (h) and GS (kts)
-  OCC     (Off Course Correction) ... TC (Total Correction, deg) as function of DistanceOFF (NM),
+          FR (Fuel Range, NM) as function of ENDURANCE (h) and GS (kts)
+  OCC     (Off Course Correction) ... TC (Total Correction, deg) as function of
+          DistanceOFF (NM),
           DistanceFLOWN (NM) and DistanceREMAIN (NM)
-  UNIT    cm>in, in>cm, m>ft, ft>m, mps>fpm, fpm>mps, km>sm, sm>km, km>nm, nm>km, nm>sm, sm>nm
+  UNIT    cm>in, in>cm, m>ft, ft>m, mps>fpm, fpm>mps, km>sm, sm>km, km>nm,
+          nm>km, nm>sm, sm>nm
   MISC    l>gal, gal>l, C>F, F>C, kg>lbs, lbs>kg
   g       Quit
 
@@ -706,6 +714,7 @@ ____________________
                0-3   Decimals
   CPU:         64    Memory size
   NOTE:        255   Size of text file
+
 
 
 ```
