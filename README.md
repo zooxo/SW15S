@@ -2,6 +2,8 @@
 
 # ++++ COMING SOON ++++
 
+See a short video of Version 1 of SW15S at: https://youtu.be/5yg8nbvpmcs
+
 <img width="884" height="537" alt="Image" src="https://github.com/user-attachments/assets/d33ba76f-114b-4f04-be9b-960ea7c9fd96" />
 <img width="270" height="913" alt="Image" src="https://github.com/user-attachments/assets/78f20775-81ee-4506-99eb-f8d967f8ab2c" />
 
