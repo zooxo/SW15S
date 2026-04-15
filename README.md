@@ -1,8 +1,8 @@
 # SW15S - The Swiss Army Knife Calculator In Your Pocket
 
-# ++++ COMING SOON ++++
 
 See a short video of Version 1 of SW15S at: https://youtu.be/5yg8nbvpmcs
+
 
 <img width="884" height="537" alt="Image" src="https://github.com/user-attachments/assets/d33ba76f-114b-4f04-be9b-960ea7c9fd96" />
 <img width="270" height="913" alt="Image" src="https://github.com/user-attachments/assets/78f20775-81ee-4506-99eb-f8d967f8ab2c" />
@@ -179,7 +179,7 @@ General keys:
     R/S GSB  5 x Cursor left/right
     BSP      Backspace
     gBSP     Clear edit string
-    ENTER    Insert space
+    ENTER    Insert space (doesn't work with RACK)
 
 - CURSOR PAD: The number keys act like a cursor pad. For instance, 8 selects UP,
   7 selects HOME and 5 (usually) selects. Hence the cursor points to a matrix of
@@ -307,9 +307,10 @@ CALC is the versatile RPN calculator of SW15S. Most keys are used the same way
 as on the HP-15c/DM15 - except that programming is done "the FORTH way" via MED.
 
 Special keys:
- g-g   Quit
- f-g   Execute command via dictionary (i.e. physical constant (start with 'c')
- f-TAN Demand next operation as complex number operation
+ gg   Quit
+ fg   Execute command via dictionary (i.e. physical constant (start with 'c')
+ fSST Toggle display size
+ fEEX Show TOS mantissa (15 digits)
 
 CALC supports the following functions:
   Basic
@@ -320,7 +321,7 @@ CALC supports the following functions:
     CHS       Negate TOS (ends number input)
     EEX       Push Y*10^X to the stack
     BSP gBSP  Clear number entry or TOS, clear stack
-    ROT up/dn Rotate 3 stack elements (ZYX->XZY/ZYX->YXZ)
+    ROT dn/up Rotate 3 stack elements (ZYX->XZY/ZYX->YXZ)
     SWAP      Swap X and Y
     LASTx     Push last ENTERed number to stack
     STO RCL   Store Y to register number X (0-9) or push register X to stack
@@ -337,7 +338,8 @@ CALC supports the following functions:
     fSWAP     PV (present value) of interest rate (%) and duration (periods)
     fBSP      Calculate 2 roots of quadratic equation xx+px+q=0 (enter p q)
   Complex number operations: (Y=imaginary and X=real part)
-    fTAN      Complex operation demanded (the next / * - + operation is complex)
+    fTAN      Demand next operation (+ - * / DUP SWAP 1/x) as complex number
+              operation (rectangular only)
   Statistics
     SUM+ SUM- Add/remove number to/from statistics register
     g0 g.     Mean value and standard deviation
@@ -696,6 +698,7 @@ SPECIFICATIONS
 ____________________
 
   LINE EDITOR: 128   Maximal string length
+  PRECISION:   64    bit double (15-17 digits of precision)
   CALC:        16    Stack size
                16    Address stack size
                0.001 Solver step accuracy (delta-x)
@@ -716,7 +719,6 @@ ____________________
                0-3   Decimals
   CPU:         64    Memory size
   NOTE:        255   Size of text file
-
 
 
 ```
