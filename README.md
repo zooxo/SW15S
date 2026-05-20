@@ -329,6 +329,7 @@ CALC supports the following functions:
     fSIN      Toggle HEX mode (enter numbers >9 with a dot (i.e. .1=a, .6=f))
     g* g/     Conditions - provides 1 (TRUE) if X=0 respective X<=Y (else 0)
     fENTER    Generate random (16-bit) number
+    gSST      PICK and push X-th stack element
   Advanced mathematics
     SQRT, SQR, EXP, LN, 10^X, LOG, Y^X, %, 1/X, delta%,
     FRAC, INT, ABS, PI, Pxy, Cxy, lnGAMMA (f0),
@@ -700,7 +701,7 @@ ____________________
 
   LINE EDITOR: 128   Maximal string length
   PRECISION:   64    bit double (15-17 digits of precision)
-  CALC:        16    Stack size
+  CALC:        8    Stack size
                16    Address stack size
                0.001 Solver step accuracy (delta-x)
                20    Maximal solver iterations
@@ -710,9 +711,7 @@ ____________________
                123   Builtin programs
                30    User programs
                4     Length of program names
-               8     Displayed digits of float number
-               19    Displayed digits of integer number
-               10    Float numbers to store
+               10    Double numbers to store
                32x16 Plot dimensions
   RACK:        4x8   Spreadsheet dimensions (4 cols, 8 rows)
                2x2   Displayed cells (alternatively 1x1)
