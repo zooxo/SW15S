@@ -1,30 +1,4 @@
 /*
-
-  save rack spreadsheets
-  serial features???
-  DO funktioniert in RACK nicht
-  bei jedem mp=xxx ein pts() einfügen, um is[] zu leeren
-  keyscan routine zeilenweise
-  +++++'s
-  getkey cout/disp variables
-  more conditions
-
-+++++ nicht besetzte CALC tasten
-static const byte key2mpos[]={ // Convert keycode to name[] position
- //SST >>GTO
- //RS >> GSB
-
- //SUM >> RE-IM, MATRIX
- //SST >> LBL
- //RS >> clearPRGRM
-
- //RS >>> P/R RTN
-};
-
-
-
-
-
 //--v----1----v----2----v----3----v----4----v----5----v----6----v----7----v----8
 
 This software is protected by the BSD 3 Clause License
@@ -55,9 +29,9 @@ To install a new firmware to a DM-15 (Voyager) calculator have a look at
 chapter Firmware Update of the Swissmicros Voyager Series User Manual at:
   https://technical.swissmicros.com/voyager/firmware/
 
-On linux computers for example install the package lpc21isp and flash the
 desired firmware (hex file) to the calculator with:
   sudo lpc21isp <firmware.hex> /dev/ttyUSB0 115200 12000
+On linux computers for example install the package lpc21isp and flash the
 
 After starting this command press the reset button on the backside of the
 calculator with a paperclip. When the flashing procedure ends you might need to
